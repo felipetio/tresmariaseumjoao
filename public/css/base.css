@@ -1,0 +1,65 @@
+@import url("http://fonts.googleapis.com/css?family=Didact+Gothic");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background: #E3E3E1;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+#header img{
+  display: block;
+  height: 53px;
+  background: url("/images/header.png") no-repeat 0 0;
+}
+
+#menu ul {
+  float: left;
+  margin: 38px 10px 0 0;
+}
+
+#menu ul li {
+  list-style: none;
+  display: inline;
+  margin:0 10px;  
+}
+
+#menu ul li a {
+  color: #FFF;
+}
+
+#header ul li a:hover {
+  text-decoration: underline;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  display: inline-block;
+}
+
+html[xmlns] .clear {
+  display: block;
+}
+
+* html .clear {
+  height: 1%;
+}
+
+.norender, .hidden {
+  display: none;
+}

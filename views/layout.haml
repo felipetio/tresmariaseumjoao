@@ -1,0 +1,50 @@
+%html
+  %head
+    %title Três Marias e um João
+    %meta{'http-equiv' => 'content-type', :content => 'text/html; charset=utf-8'}
+    %link{:rel => 'icon', :href => '/images/favicon.ico', :type => 'image/x-icon'}
+    %link{:rel => 'stylesheet', :href => '/css/reset.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => '/css/layout.css', :type => 'text/css'}
+    %script{:type => 'text/javascript', :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/layout.js'}
+
+  %body
+    #header
+      %img{:src => '/images/header.png'}
+    #menu
+      %h1
+        %a{:href => '/'}
+          %img{:src => '/images/menu/home.png', :title => 'Três Marias e um João'}
+
+      %ul.menu
+        %li
+          %a{:href => '/grupo'}
+            %img{:src => '/images/menu/grupo.png', :title => 'O grupo'}
+        -#%li
+          %a{:href => '/espetaculos'}
+            %img{:src => '/images/menu/espetaculos.png', :title => 'Espetáculos'}
+        %li
+          %a{:href => '/integrantes'}
+            %img{:src => '/images/menu/integrantes.png', :title => 'Integrantes'}
+        -#%li
+          %a{:href => '/agenda'}
+            %img{:src => '/images/menu/agenda.png', :title => 'Agenda'}
+        -#%li
+          %a{:href => '/fotos'}
+            %img{:src => '/images/menu/fotos.png', :title => 'Fotos'}
+        -#%li
+          %a{:href => '/clipping'}
+            %img{:src => '/images/menu/clipping.png', :title => 'Clipping'}
+        -#%li
+          %a{:href => '/contato'}
+            %img{:src => '/images/menu/contato.png', :title => 'Contato'}
+
+      %img#rand_object{:src => @rand_object}
+
+    #content
+      .wrapper
+        = yield
+
+    #intro
+      %center
+        %img{:src => '/images/intro.jpg'}
