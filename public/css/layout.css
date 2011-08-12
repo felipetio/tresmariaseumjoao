@@ -87,6 +87,8 @@ html[xmlns] .clear {
 #content .wrapper{
   margin: auto;
   width: 500px;
+  height: 500px;
+  overflow: auto;
 }
 
 #content h2 {
@@ -125,4 +127,21 @@ html[xmlns] .clear {
 
 #intro img{
   margin:0px auto;
+}
+
+ul#integrantes li {
+  list-style: none;
+}
+
+ul#integrantes li a {
+  text-decoration: none;
+}
+
+div.espetaculo,
+div.integrante {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  padding: .5em;
+  background: #EAD5BB url("/images/background.jpg") repeat 0 0;
+  width: 800px;
 }
