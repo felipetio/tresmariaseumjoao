@@ -10,9 +10,14 @@
 html {
   height: 100%;
 }
+
 body {
   background: #EAD5BB url("/images/background.jpg") repeat 0 0;
   font-family: 'Swanky and Moo Moo', serif;
+}
+
+a {
+  color: purple;
 }
 
 #header{
@@ -77,44 +82,47 @@ html[xmlns] .clear {
 }
 
 #content {
-  float: left;
   width: 800px;
   height: 520px;
   padding-top: 80px;
+  margin-left: 230px;
   background: url("/images/background_content.jpg") no-repeat center;
 }
 
 #content .wrapper{
   margin: auto;
   width: 500px;
-  height: 500px;
-  overflow: auto;
+  height: 510px;
+  overflow: overlay;
 }
 
-#content h2 {
+h2 {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   font-style: normal;
   letter-spacing: -0.01em;
-  word-spacing: 0.132em;
   line-height: 0.96;
   font-weight: bold;
-  margin: .2em;
   text-shadow: 2px 2px 2px #000;
   color: #FFF;
 }
 
-#content h3 {
+h3 {
   font-size: 1.5em;
   font-weight: bold;
   padding: .5em .5em 0 .5em;
 }
 
-#content p {
-  font-size: 1.3em;
-  line-height: 1.4em;
+h3.small {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+p {
+  font-size: 1.2em;
   margin: .5em;
-  padding: .8em;
+  padding: .1em;
 }
 
 #intro {
@@ -139,9 +147,33 @@ ul#integrantes li a {
 
 div.espetaculo,
 div.integrante {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  padding: .5em;
   background: #EAD5BB url("/images/background.jpg") repeat 0 0;
   width: 800px;
 }
+ 
+#embreve{
+  margin-left: 200px;
+}
+
+#espetaculos ul, #embreve ul{
+  margin-left: 50px;
+  list-style-type: circle;
+}
+
+#espetaculos ul p, #embreve ul p{
+  margin: 0;
+  padding: 0;
+}
+
+#espetaculos ul p{
+  font-weight: bold; 
+}
+
+#album a {
+  text-decoration: none;
+}
+
+#album a img {
+  width: 140px;
+}
+

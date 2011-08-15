@@ -10,44 +10,60 @@
     -#%script{:type => 'text/javascript', :src => '/js/fancybox/jquery.mousewheel-3.0.4.pack.js'}
     %script{:type => 'text/javascript', :src => '/js/fancybox/jquery.fancybox-1.3.4.pack.js'}
     %link{:rel => "stylesheet", :type => "text/css", :href => "/js/fancybox/jquery.fancybox-1.3.4.css", :media => "screen"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/sitebox.css", :media => "screen"}
 
   %body
-    #header
-      %img{:src => '/images/header.png'}
-    #menu
-      %h1
-        %a{:href => '/'}
-          %img{:src => '/images/menu/home.png', :title => 'Três Marias e um João'}
+    %div#sitebox-wrap{:style => "top: 20px; left: 20px;"}
+      %div#sitebox-outer
+        %div.sitebox-bg#sitebox-bg-n
+        %div.sitebox-bg#sitebox-bg-ne
+        %div.sitebox-bg#sitebox-bg-e
+        %div.sitebox-bg#sitebox-bg-se
+        %div.sitebox-bg#sitebox-bg-s
+        %div.sitebox-bg#sitebox-bg-sw
+        %div.sitebox-bg#sitebox-bg-w
+        %div.sitebox-bg#sitebox-bg-nw
+        %div#sitebox-content
+          %div{:style => "width:auto;height:auto;overflow: auto;position:relative;"}
+            #header
+              %img{:src => '/images/header.png'}
+            #menu
+              %h1
+                %a{:href => '/'}
+                  %img{:src => '/images/menu/home.png', :title => 'Três Marias e um João'}
 
-      %ul.menu
-        %li
-          %a{:href => '/grupo'}
-            %img{:src => '/images/menu/grupo.png', :title => 'O grupo'}
-        %li
-          %a{:href => '/espetaculos'}
-            %img{:src => '/images/menu/espetaculos.png', :title => 'Espetáculos'}
-        %li
-          %a{:href => '/integrantes'}
-            %img{:src => '/images/menu/integrantes.png', :title => 'Integrantes'}
-        -#%li
-          %a{:href => '/agenda'}
-            %img{:src => '/images/menu/agenda.png', :title => 'Agenda'}
-        -#%li
-          %a{:href => '/fotos'}
-            %img{:src => '/images/menu/fotos.png', :title => 'Fotos'}
-        -#%li
-          %a{:href => '/clipping'}
-            %img{:src => '/images/menu/clipping.png', :title => 'Clipping'}
-        -#%li
-          %a{:href => '/contato'}
-            %img{:src => '/images/menu/contato.png', :title => 'Contato'}
+              %ul.menu
+                %li
+                  %a{:href => '/grupo'}
+                    %img{:src => '/images/menu/grupo.png', :title => 'O grupo'}
+                %li
+                  %a{:href => '/espetaculos'}
+                    %img{:src => '/images/menu/espetaculos.png', :title => 'Espetáculos'}
+                %li
+                  %a{:href => '/integrantes'}
+                    %img{:src => '/images/menu/integrantes.png', :title => 'Integrantes'}
+                -#%li
+                  %a{:href => '/agenda'}
+                    %img{:src => '/images/menu/agenda.png', :title => 'Agenda'}
+                %li
+                  %a{:href => '/fotos'}
+                    %img{:src => '/images/menu/fotos.png', :title => 'Fotos'}
+                -#%li
+                  %a{:href => '/trabalhos'}
+                    %img{:src => '/images/menu/trabalhos.png', :title => 'Trabalhos'}
+                %li
+                  %a{:href => '/clipping'}
+                    %img{:src => '/images/menu/clipping.png', :title => 'Clipping'}
+                %li
+                  %a{:href => '/contato'}
+                    %img{:src => '/images/menu/contato.png', :title => 'Contato'}
 
-      -#%img#rand_object{:src => @rand_object}
+              -#%img#rand_object{:src => @rand_object}
 
-    #content
-      .wrapper
-        = yield
+            #content
+              .wrapper
+                = yield
 
-    -##intro
-    -#  %center
-    -#    %img{:src => '/images/intro.jpg'}
+            -##intro
+            -#  %center
+            -#    %img{:src => '/images/intro.jpg'}

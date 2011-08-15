@@ -1,3 +1,27 @@
-%h2 Sandra Saavedra
+%h2 Fotos
 
-%p Bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla blablabla bla blabla bla
+#album
+  %a{:rel => "example_group", :href => "/images/fotos/1.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/1.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/2.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/2.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/3.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/3.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/4.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/4.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/5.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/5.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/6.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/6.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/7.png", :title => ""}
+    %img{:alt => "", :src => "/images/fotos/s/7.jpg"} 
+  %a{:rel => "example_group", :href => "/images/fotos/8.png", :title => ""}
+    %img.last{:alt => "", :src => "/images/fotos/s/8.jpg"} 
+
+:javascript
+  $("a[rel=example_group]").fancybox({
+    'transitionIn'  : 'elastic',
+    'opacity'       : true,
+    'overlayShow'   : false,
+    'transitionOut' : 'none',
+  });
