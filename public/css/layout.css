@@ -169,11 +169,19 @@ div.integrante {
   font-weight: bold; 
 }
 
-#album a {
+#album a, #clipping a {
   text-decoration: none;
 }
 
-#album a img {
-  width: 140px;
+#album a img, #clipping a img{
+  width: 100px;
 }
 
+#album, #clipping {
+  margin: 25px auto;
+}
+
+ul.trabalhos{
+  margin-left: 50px;
+  list-style-type: circle;
+}
