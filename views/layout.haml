@@ -55,7 +55,7 @@
                   %a{:href => '/clipping'}
                     %img{:src => '/images/menu/clipping.png', :title => 'Clipping'}
                 %li
-                  %a{:href => '/contato'}
+                  %a{:href => '#contato'}
                     %img{:src => '/images/menu/contato.png', :title => 'Contato'}
 
               -#%img#rand_object{:src => @rand_object}
@@ -67,3 +67,17 @@
             -##intro
             -#  %center
             -#    %img{:src => '/images/intro.jpg'}
+
+            #div.norender
+              #contato
+                %h2 Produção e Vendas
+                
+                %p Bruno - (11) 77129282
+                %p Larissa - (11) 65535551
+                
+                %a{:mailto => "contato@tresmariaseumjoao.com.br"} contato@tresmariaseumjoao.com.br
+                
+                %p.sign Design by Leandro Teichimann & Dárida Mirella
+
+    :javascript
+      $("#menu a[href=#contato]").fancybox();
