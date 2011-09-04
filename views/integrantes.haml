@@ -3,49 +3,61 @@
   %br
   sobre as Marias e o João.
 
--#%ul#integrantes
-  %li
-    %a{:href => '#bruno'}
-      %h2 Bruno Luís Vieira
-  %li
-    %a{:href => '#larissa'}
-      %h2 Larissa Magagnini
-  %li
-    %a{:href => '#leticia'}
-      %h2 Letícia Finatti
-  %li
-    %a{:href => '#sandra'}
-      %h2 Sandra Saavedra
+%div#face
+  %center
+    %img{:src => '/images/fotos/8.png', :style => 'width: 280px; margin-top: -26px'}
+  
+  %a{:href => '#bruno'}
+    %div.face{:style => "left: 635px; top: 157px;"}
+  %a{:href => '#larissa'}
+    %div.face{:style => "left: 573px; top: 202px;"}
+  %a{:href => '#leticia'}
+    %div.face{:style => "left: 590px; top: 310px;"}
+  %a{:href => '#sandra'}
+    %div.face{:style => "left: 699px; top: 210px;"}
    
-%center
-  %img{:src => '/images/fotos/8.png', :style => 'width: 300px; margin-top: -26px'}
-
 %div.norender
   %div#larissa.integrante
     %h2 Larissa Magagnini
+    %img{:src => '/images/integrantes/larissa.jpg', :style => 'width: 280px;'}
     %p Atriz e arte educadora. Graduada em 2009 no curso de Licenciatura e Bacharelado em Teatro pela Universidade Anhembi Morumbi.
     %p No ano de 2010 participou do curso “Introdução ao Método do Ator” coordenador por Antunes Filho, e do curso divvre de cinema no Studio Fátima Toledo.
     %p Como atriz dentre seus últimos trabalhos estão “O Ultimo Carro” direção de Guilherme Sant’Ana, “ As Bruxas de Salém” direção de Simone Bôer e “Tribobó City, direção de Brian Penido.
+    %hr
   
   %div#sandra.integrante
     %h2 Sandra Saavedra
+    %img{:src => '/images/integrantes/sandra.jpg', :style => 'width: 280px;'}
     %p Atriz e arte educadora graduada pela Universidade Anhembi Morumbi em 2009.  Iniciou sua carreira como atriz amadora em 2003, desde então atuou em diversos espetáculos, dentre eles: "As Bruxas deSalém" direção de Simoni Boer; “Jesus Cristo Superstar” dirigido por Abigail Wimer e "Os Miseráveis"direção de Gabriel Veiga Catellani.
     %p Em 2007 foi professora assistente do curso de teatro para adolescentes com paradivsia cerebral no Núcleode Educação e Artes do GRHAU - Grupo de reabilitação e habilitação unificado.
     %p Atualmente é professora de teatro do Núcleo Educatho lecionando em diversas unidades do ColégioObjetivo desde 2010, e iniciou em março de 2011 como professora de teatro do Ensino Fundamental I eII no Colégio Sigmund Freud.
+    %hr
   
   %div#bruno.integrante
     %h2 Bruno Luís Vieira
+    %img{:src => '/images/integrantes/bruno.jpg', :style => 'width: 280px;'}
     %p Ator, cantor, dançarino e arte-educador. Iniciou sua trajetória artística em 1997,participando de montagens dos musicais: “O Homem de La Mancha”, “Um Vionista noTelhado” e Jesus Cristo Superstar”, com direção de Abigail Wímer e Sílen de Castro.
     %p Foi aluno da Casa de Artes Operária, integrando o elenco do musical “Godspell” comdireção de Ana Tagdivanetti e Guilherme Terra. Estudou jazz, com Edy Wilson no GrupoRaça Centro de Artes e  sapateado com Kika Sampaio e  Susan Baskerville no KikaTap Center.
     %p Em 2009 se tornou bacharel e divcenciado em Artes Cênicas pela Universidade AnhembiMorumbi, onde teve como mestres: Simone Bôer, Guilherme Santana, Brian PenidoRoss e Paulo Marcos.
     %p Como arte-educador trabalhou no Colégio Jardim São Paulo com curso divvre de teatro eatualmente, trabalha na Escola Waldorf Arcanjo Micael.
+    %hr
   
   %div#leticia.integrante
     %h2 Letícia Finatti
+    %img{:src => '/images/integrantes/leticia.jpg', :style => 'width: 280px;'}
     %p Atriz, arte-educadora e contadora de histórias. Formada no curso de Teatro daUniversidade Anhembi Morumbi, atualmente cursa Linguagens da Arte, especiadivzaçãolato sensu em arte educação da USP.
     %p Entre seus últimos trabalhos como atrizestão “Marulho: o caminho do rio”(2011) e “Vesperais nas Janelas” (2009) com oGrupo Redimunho de Investigação Teatral, “Tribobó City” (2009) dirigido por BrianPenido, e “Terra: Você vai perder o chão” (2008) dirigido por Erike Busoni.
     %p Como arteeducadora atua como professora de teatro no Colégio Atuadivdade.
+    %hr
 
 :javascript
-  $("#integrantes li a").each(function() {$(this).fancybox();});
+  $("#face a").each(function() {$(this).fancybox();});
+  $("#face a div").hover(
+    function () {
+      $(this).addClass("face_hover");
+    },
+    function () {
+      $(this).removeClass("face_hover");
+    }
+  );
 

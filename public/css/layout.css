@@ -200,5 +200,28 @@ ul.trabalhos {
 #contato p.sign {
   top: 150px;
   float : right;
-  position : relative
+  position : relative;
+}
+
+div.face {
+  width: 60px;
+  height: 60px; 
+  position: absolute; 
+  z-index: 110;
+}
+
+div.face_hover {
+  border: 2px solid white;
+}
+
+div.integrante img {
+  width: 300px;
+  margin: 10px;
+  float: left;
+}
+
+div.integrante hr {
+  display: block;
+  visibility: none;
+  clear: both;
 }

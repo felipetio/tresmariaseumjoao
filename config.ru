@@ -1,3 +1,3 @@
-require 'app'
+require './app'
 disable :run
 run Sinatra::Application
