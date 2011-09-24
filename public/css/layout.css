@@ -41,7 +41,11 @@ a {
 
 #menu ul li {
   list-style: none;
-  margin:-10px 10px;  
+  margin:-10px 10px;
+}
+
+#menu ul li.fb {
+  padding: 10px 50px;
 }
 
 #menu ul li a {

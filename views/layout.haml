@@ -57,6 +57,17 @@
                 %li
                   %a{:href => '#contato'}
                     %img{:src => '/images/menu/contato.png', :title => 'Contato'}
+                %li.fb
+                  %div{:id => "fb-root"}
+                  :javascript
+                    (function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) {return;}
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                  %div{:class => "fb-like", :data => {:href => request.url, :send => "false", :layout => "button_count", :width => "250", :show => {:faces => "true"}}}
 
               -#%img#rand_object{:src => @rand_object}
 
@@ -71,12 +82,12 @@
             #div.norender
               #contato
                 %h2 Produção e Vendas
-                
+
                 %p Bruno - (11) 77129282
                 %p Larissa - (11) 65535551
-                
+
                 %a{:mailto => "contato@tresmariaseumjoao.com.br"} contato@tresmariaseumjoao.com.br
-                
+
                 %p.sign Design by Leandro Teichimann & Dárida Mirella
 
     :javascript
