@@ -31,6 +31,7 @@ a {
   width: 316px;
   height: 600px;
   float: left;
+  display: inline;
   background: url("/images/background_menu.png") no-repeat 0 0;
 }
 
@@ -86,10 +87,12 @@ html[xmlns] .clear {
 }
 
 #content {
-  width: 800px;
   height: 520px;
+  width: 600px;
   padding-top: 80px;
   margin-left: 230px;
+  float: left;
+  display: inline;
   background: url("/images/background_content.jpg") no-repeat center;
 }
 
