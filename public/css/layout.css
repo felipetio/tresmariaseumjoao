@@ -14,6 +14,8 @@ html {
 body {
   background: #EAD5BB url("/images/background2.jpg") repeat 0 0;
   font-family: 'Swanky and Moo Moo', serif;
+  padding:0px;
+  margin:0px;
 }
 
 a {
@@ -28,10 +30,11 @@ a {
 }
 
 #menu{
+  float: left;
   width: 316px;
   height: 600px;
-  float: left;
-  display: inline;
+  padding:0px;
+  margin:0px;
   background: url("/images/background_menu.png") no-repeat 0 0;
 }
 
@@ -86,12 +89,26 @@ html[xmlns] .clear {
   display: none;
 }
 
+#container {
+  position:absolute;
+  outline: none;
+  height:600px; 
+  width:1000px;
+  margin:-300px 0px 0px -500px;
+  top: 50%; 
+  left: 50%;
+  text-align: left;
+  padding: 0px;
+  border: 0px solid #fff;
+  overflow: hidden;
+  background: #EAD5BB url("/images/background.jpg") repeat 0 0;
+}
+
 #content {
   height: 520px;
-  width: 600px;
-  padding-top: 80px;
-  float: left;
-  display: inline;
+  padding: 80px 0px 0px 0px;
+  margin-left: 316px;
+  margin-right: 0px;
   background: url("/images/background_content.jpg") no-repeat center;
 }
 
