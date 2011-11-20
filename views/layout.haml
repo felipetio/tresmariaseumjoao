@@ -3,18 +3,21 @@
     %title Três Marias e um João
     %meta{'http-equiv' => 'content-type', :content => 'text/html; charset=utf-8'}
     %link{:rel => 'icon', :href => '/images/favicon.ico', :type => 'image/x-icon'}
-    %link{:rel => 'stylesheet', :href => '/css/reset.css', :type => 'text/css'}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/js/fancybox/jquery.fancybox-1.3.4.css", :media => "screen"}
+    %link{:rel => "stylesheet", :href => "/css/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => "stylesheet", :href => "/css/blueprint/print.css", :type => "text/css", :media => "print"}
+    /[if IE]
+      %link{:rel => "stylesheet", :href => "/css/blueprint/ie.css", :type => "text/css", :media => "screen, projection"}
     %link{:rel => 'stylesheet', :href => '/css/layout.css', :type => 'text/css'}
     %script{:type => 'text/javascript', :src => '/js/layout.js'}
     %script{:type => 'text/javascript', :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'}
     %script{:type => 'text/javascript', :src => '/js/fancybox/jquery.fancybox-1.3.4.pack.js'}
-    %link{:rel => "stylesheet", :type => "text/css", :href => "/js/fancybox/jquery.fancybox-1.3.4.css", :media => "screen"}
 
   %body
-    #container
-      #header
-        %img{:src => '/images/header.png'}
-      #menu
+    #container.container
+      #header.header.span-24
+        %img{:src => '/images/header2.png'}
+      #menu.span-8
         %h1
           %a{:href => '/'}
             %img{:src => '/images/menu/home.png', :title => 'Três Marias e um João'}
@@ -51,15 +54,15 @@
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) {return;}
                 js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
                 fjs.parentNode.insertBefore(js, fjs);
               }(document, 'script', 'facebook-jssdk'));
-            %div{:class => "fb-like", :data => {:href => "http://tresmariaseumjoao.com.br/", :send => "false", :layout => "button_count", :width => "250", :show => {:faces => "true"}}}
+            %div{:class => "fb-like", :data => {:href => "http://tresmariaseumjoao.com.br/", :send => "false", :layout => "standart", :width => "160", :colorscheme => "light", :show => {:faces => "true"}}}
 
         -#%img#rand_object{:src => @rand_object}
 
-      #content
-        .wrapper
+      #content.span-15
+        .wrapper.span-13.push-1
           = yield
 
       -#%div.norender
