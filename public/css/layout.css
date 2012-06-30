@@ -1,9 +1,9 @@
-@import url("http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo");
+@import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
 
 body {
   background: #EAD5BB url("/images/background2.jpg") repeat 0 0;
-  font-family: 'Swanky and Moo Moo', serif;
-  font-size: 110%;
+  font-family: 'Happy Monkey', cursive;
+  font-size: 105%;
 }
 
 p {
